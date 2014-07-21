@@ -60,6 +60,7 @@ posts = {
 
     // **takes:** a json object with all the properties which should be updated
     edit: function edit(postData) {
+        postData.actionCaller = this.user;
         // **returns:** a promise for the resulting post in a json object
         if (!this.user) {
             return when.reject({code: 403, message: 'You do not have permission to edit this post.'});
@@ -91,6 +92,7 @@ posts = {
 
     // **takes:** a json object representing a post,
     add: function add(postData) {
+        postData.actionCaller = this.user;
         // **returns:** a promise for the resulting post in a json object
         if (!this.user) {
             return when.reject({code: 403, message: 'You do not have permission to add posts.'});
