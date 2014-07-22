@@ -33,14 +33,14 @@ if (process.env.NODE_ENV === 'development') {
 
 function doFirstRun() {
     var firstRunMessage = [
-        'Welcome to Ghost.',
-        'You\'re running under the <strong>',
+        'Bem vindo ao Ghost.',
+        'Você esta rodando no ambiente <strong>',
         process.env.NODE_ENV,
-        '</strong>environment.',
+        '</strong>.',
 
-        'Your URL is set to',
+        'Sua URL esta definida para ',
         '<strong>' + config().url + '</strong>.',
-        'See <a href="http://docs.ghost.org/">http://docs.ghost.org</a> for instructions.'
+        'Veja <a href="http://docs.ghost.org/">http://docs.ghost.org</a> para maiores instruções.'
     ];
 
     return api.notifications.add({

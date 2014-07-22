@@ -51,13 +51,8 @@ config = {
         url: 'http://my-ghost-blog.com',
         mail: {},
         database: {
-            client: 'mysql',
+            client: 'sqlite3',
             connection: {
-                host: 'localhost',
-                user: 'adminzygdsSK',
-                password: 'ATI437BFgpq1',
-                database: 'ghost',
-                charset: 'utf8'
                 filename: path.join(__dirname, '/content/data/ghost.db')
             },
             debug: false

@@ -26,7 +26,7 @@ errors = {
 
     throwError: function (err) {
         if (!err) {
-            err = new Error("An error occurred");
+            err = new Error("Ocorreu um erro");
         }
 
         if (_.isString(err)) {
@@ -69,9 +69,9 @@ errors = {
             msgs;
 
         if (err) {
-            err = err.message || err || 'An unknown error occurred.';
+            err = err.message || err || 'Ocorreu um erro desconhecido.';
         } else {
-            err = 'An unknown error occurred.';
+            err = 'Ocorreu um erro desconhecido.';
         }
         // TODO: Logging framework hookup
         // Eventually we'll have better logging which will know about envs
