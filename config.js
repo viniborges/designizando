@@ -54,9 +54,9 @@ config = {
             client: 'mysql',
             connection: {
                 host: 'localhost',
-                user: 'adminzygdsSK',
-                password: 'ATI437BFgpq1',
-                database: 'ghost',
+                user: 'adminypK5jbA',
+                password: 'ak9EiAPbiHWN',
+                database: 'designizando',
                 charset: 'utf8'
                 filename: path.join(__dirname, '/content/data/ghost.db')
             },
